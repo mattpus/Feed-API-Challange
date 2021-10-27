@@ -64,16 +64,16 @@ We've provided you with appropriate tests to guide and validate your solution. Y
 
 1) Fork the latest version of the challenge repo. Here's <a href="https://guides.github.com/activities/forking" target="_blank">how forking works</a>.
 
-2) Open the `FeedAPIChallenge.xcodeproj` project on Xcode 12.5.
-	
+2) Open the `FeedAPIChallenge.xcodeproj` project on Xcode 13.0.
+
 	- Older Xcode versions are not supported.
 	
-	- Challenges submitted with branches other than `xcode12_5` will be rejected.
+	- Challenges submitted with branches other than `xcode13_0` will be rejected.
 
 3) There are two main folders in the project:
 	- The `FeedAPIChallenge` folder contains the production types, including the `RemoteFeedLoader` and dependencies for requesting and loading the feed remotely. 
 
-		- ⚠️ Important: ***You should only change the `RemoteFeedLoader.swift` file to implement the `load` method.***
+		- ⚠️ Important: ***You can create new files, but you should only change the `RemoteFeedLoader.swift` file to implement the `load` method.***
 
 		- Do not change any other files in the folder.
 	
@@ -119,7 +119,7 @@ We've provided you with appropriate tests to guide and validate your solution. Y
 
 	- If it does, create a Pull Request from your branch to the main challenge repo's matching branch.
 
-		- For example, if you implemented the challenge using the `xcode12_5` branch, your PR should be from your fork's `xcode12_5` branch into the main repo's `xcode12_5` branch (DO NOT MIX Xcode versions or you'll have merge conflicts!).
+		- For example, if you implemented the challenge using the `xcode13_0` branch, your PR should be from your fork's `xcode13_0` branch into the main repo's `xcode13_0` branch (DO NOT MIX Xcode versions or you'll have merge conflicts!).
 
 	- The title of the Pull Request should be: **Your Name - Feed API Challenge**
 
