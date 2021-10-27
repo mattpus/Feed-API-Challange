@@ -8,6 +8,8 @@ import FeedAPIChallenge
 class LoadFeedFromRemoteUseCaseTests: XCTestCase {
 	//  ***********************
 	//
+	//  [DO NOT DELETE THIS COMMENT]
+	//
 	//  Follow the TDD process:
 	//
 	//  1. Uncomment and run one test at a time (run tests with CMD+U).
@@ -24,7 +26,7 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
 		XCTAssertTrue(client.requestedURLs.isEmpty)
 	}
 
-//	func test_loadTwice_requestsDataFromURLTwice() {
+	func test_loadTwice_requestsDataFromURLTwice() {
 //		let url = URL(string: "https://a-given-url.com")!
 //		let (sut, client) = makeSUT(url: url)
 //
@@ -32,18 +34,18 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
 //		sut.load { _ in }
 //
 //		XCTAssertEqual(client.requestedURLs, [url, url])
-//	}
-//
-//	func test_load_deliversConnectivityErrorOnClientError() {
+	}
+
+	func test_load_deliversConnectivityErrorOnClientError() {
 //		let (sut, client) = makeSUT()
 //
 //		expect(sut, toCompleteWith: .failure(.connectivity), when: {
 //			let clientError = NSError(domain: "Test", code: 0)
 //			client.complete(with: clientError)
 //		})
-//	}
-//
-//	func test_load_deliversInvalidDataErrorOnNon200HTTPResponse() {
+	}
+
+	func test_load_deliversInvalidDataErrorOnNon200HTTPResponse() {
 //		let (sut, client) = makeSUT()
 //
 //		let samples = [199, 201, 300, 400, 500]
@@ -54,18 +56,18 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
 //				client.complete(withStatusCode: code, data: json, at: index)
 //			})
 //		}
-//	}
-//
-//	func test_load_deliversInvalidDataErrorOn200HTTPResponseWithInvalidJSON() {
+	}
+
+	func test_load_deliversInvalidDataErrorOn200HTTPResponseWithInvalidJSON() {
 //		let (sut, client) = makeSUT()
 //
 //		expect(sut, toCompleteWith: .failure(.invalidData), when: {
 //			let invalidJSON = Data("invalid json".utf8)
 //			client.complete(withStatusCode: 200, data: invalidJSON)
 //		})
-//	}
-//
-//	func test_load_deliversInvalidDataErrorOn200HTTPResponseWithPartiallyValidJSONItems() {
+	}
+
+	func test_load_deliversInvalidDataErrorOn200HTTPResponseWithPartiallyValidJSONItems() {
 //		let (sut, client) = makeSUT()
 //
 //		let validItem = makeItem(
@@ -81,18 +83,18 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
 //			let json = makeItemsJSON(items)
 //			client.complete(withStatusCode: 200, data: json)
 //		})
-//	}
-//
-//	func test_load_deliversSuccessWithNoItemsOn200HTTPResponseWithEmptyJSONList() {
+	}
+
+	func test_load_deliversSuccessWithNoItemsOn200HTTPResponseWithEmptyJSONList() {
 //		let (sut, client) = makeSUT()
 //
 //		expect(sut, toCompleteWith: .success([]), when: {
 //			let emptyListJSON = makeItemsJSON([])
 //			client.complete(withStatusCode: 200, data: emptyListJSON)
 //		})
-//	}
-//
-//	func test_load_deliversSuccessWithItemsOn200HTTPResponseWithJSONItems() {
+	}
+
+	func test_load_deliversSuccessWithItemsOn200HTTPResponseWithJSONItems() {
 //		let (sut, client) = makeSUT()
 //
 //		let item1 = makeItem(
@@ -111,9 +113,9 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
 //			let json = makeItemsJSON([item1.json, item2.json])
 //			client.complete(withStatusCode: 200, data: json)
 //		})
-//	}
-//
-//	func test_load_doesNotDeliverResultAfterSUTInstanceHasBeenDeallocated() {
+	}
+
+	func test_load_doesNotDeliverResultAfterSUTInstanceHasBeenDeallocated() {
 //		let url = URL(string: "http://any-url.com")!
 //		let client = HTTPClientSpy()
 //		var sut: RemoteFeedLoader? = RemoteFeedLoader(url: url, client: client)
@@ -125,7 +127,7 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
 //		client.complete(withStatusCode: 200, data: makeItemsJSON([]))
 //
 //		XCTAssertTrue(capturedResults.isEmpty)
-//	}
+	}
 
 	// MARK: - Helpers
 
