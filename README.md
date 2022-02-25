@@ -83,6 +83,8 @@ We've provided you with appropriate tests to guide and validate your solution. Y
 
 		- Do not change any other files in the test folder.
 
+	- Do not change any project settings, including scheme settings.
+
 	- Do not change the indentation in the project.
 
 	- Do not rename the existing classes and files.
