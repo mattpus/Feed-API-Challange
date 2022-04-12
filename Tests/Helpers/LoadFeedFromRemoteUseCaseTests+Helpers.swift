@@ -1,5 +1,5 @@
 //
-//  Copyright © 2020 Essential Developer Ltd. All rights reserved.
+//  Copyright © Essential Developer. All rights reserved.
 //
 
 import XCTest
