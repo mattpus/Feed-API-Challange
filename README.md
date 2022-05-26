@@ -64,11 +64,11 @@ We've provided you with appropriate tests to guide and validate your solution. Y
 
 1) Fork the latest version of the challenge repo. Here's <a href="https://guides.github.com/activities/forking" target="_blank">how forking works</a>.
 
-2) Open the `FeedAPIChallenge.xcodeproj` project on Xcode 13.3.
+2) Open the `FeedAPIChallenge.xcodeproj` project on Xcode 13.4.
 
 	- Other Xcode versions are not supported in this branch.
 	
-		- Challenges submitted with branches other than `xcode13_3` will be rejected.
+		- Challenges submitted with branches other than `xcode13_4` will be rejected.
 
 3) There are two main folders in the project:
 	- The `FeedAPIChallenge` folder contains the production types, including the `RemoteFeedLoader` and dependencies for requesting and loading the feed remotely. 
@@ -121,13 +121,19 @@ We've provided you with appropriate tests to guide and validate your solution. Y
 
 	- If it does, create a Pull Request from your branch to the main challenge repo's matching branch.
 
-		- For example, if you implemented the challenge using the `xcode13_3` branch, your PR should be from your fork's `xcode13_3` branch into the main repo's `xcode13_3` branch (DO NOT MIX Xcode versions or you'll have merge conflicts!).
+		- For example, if you implemented the challenge using the `xcode13_4` branch, your PR should be from your fork's `xcode13_4` branch into the main repo's `xcode13_4` branch (DO NOT MIX Xcode versions or you'll have merge conflicts!).
 
 	- The title of the Pull Request should be: Your Name - Feed API Challenge
 	
 	- **Create only one Pull Request** and **do not close it**. If you have any issues, send a comment inside the Pull Request asking for help.
 
 9) As soon as you create a Pull Request, we automatically receive a notification. You just need to create it and wait while we review your Pull Request and approve it or request any changes required with detailed feedback.
+
+10) If instructors request changes in your Pull Request, **only push your changes once you're done with all changes** to avoid running CI for every tiny commit. 
+
+	- CI server time isn't free. It's good practice to avoid running it on every tiny commit - so only push changes once you're done.
+
+	- Abusing CI server time can lead to your GitHub account getting blocked.
 
 
 ## Guidelines
