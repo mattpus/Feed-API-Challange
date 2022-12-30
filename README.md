@@ -64,11 +64,11 @@ We've provided you with appropriate tests to guide and validate your solution. Y
 
 1) Fork the latest version of the challenge repo. Here's <a href="https://guides.github.com/activities/forking" target="_blank">how forking works</a>.
 
-2) Open the `FeedAPIChallenge.xcodeproj` project on Xcode 14.1.
+2) Open the `FeedAPIChallenge.xcodeproj` project on Xcode 14.2.
 
 	- Other Xcode versions are not supported in this branch.
 	
-		- Challenges submitted with branches other than `xcode14_1` will be rejected.
+		- Challenges submitted with branches other than `xcode14_2` will be rejected.
 
 3) There are two main folders in the project:
 	- The `FeedAPIChallenge` folder contains the production types, including the `RemoteFeedLoader` and dependencies for requesting and loading the feed remotely. 
@@ -121,7 +121,7 @@ We've provided you with appropriate tests to guide and validate your solution. Y
 
 	- If it does, create a Pull Request from your branch to the main challenge repo's matching branch.
 
-		- For example, if you implemented the challenge using the `xcode14_1` branch, your PR should be from your fork's `xcode14_1` branch into the main repo's `xcode14_1` branch (DO NOT MIX Xcode versions or you'll have merge conflicts!).
+		- For example, if you implemented the challenge using the `xcode14_2` branch, your PR should be from your fork's `xcode14_2` branch into the main repo's `xcode14_2` branch (DO NOT MIX Xcode versions or you'll have merge conflicts!).
 
 	- The title of the Pull Request should be: Your Name - Feed API Challenge
 	
