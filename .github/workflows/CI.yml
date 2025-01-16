@@ -25,4 +25,4 @@ jobs:
       run: sudo xcode-select -switch /Applications/Xcode_16.2.app
             
     - name: Build and Test
-      run: xcodebuild test -project FeedAPIChallenge.xcodeproj -scheme "FeedAPIChallenge" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO SWIFT_TREAT_WARNINGS_AS_ERRORS=YES OTHER_SWIFT_FLAGS="-D ED_SKIP_SWIFT_FORMAT"
+      run: set -o pipefail && xcodebuild test -project FeedAPIChallenge.xcodeproj -scheme "FeedAPIChallenge" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO SWIFT_TREAT_WARNINGS_AS_ERRORS=YES OTHER_SWIFT_FLAGS="-D ED_SKIP_SWIFT_FORMAT" | xcbeautify --renderer github-actions
